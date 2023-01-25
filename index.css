@@ -48,6 +48,10 @@ img{
     height: 250px;
 }
 
+.entrada1{
+    padding: auto;
+}
+
 footer {
     text-align: center;
     background: url(imagenes/bg.jpg);
