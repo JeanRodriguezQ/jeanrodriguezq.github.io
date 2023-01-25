@@ -56,6 +56,7 @@ img{
     color: azure;
     text-align: center;
     background-color: rgb(75, 69, 69);
+    font-size: 35px
 }
 
 p{
@@ -63,7 +64,7 @@ p{
 }
 
 #mision{
-    font-size: 20px;
+    font-size: 25px;
     color: darkred;
 
 }
@@ -71,6 +72,7 @@ p{
 .diferenciales{
     padding: 20px;
     background-color: #FFFFFF;
+    font-size: 30px;
 }
 
 .items{
@@ -78,7 +80,7 @@ p{
 }
 
 .items li{
-    display: inline-block;
+    display: inline;
     vertical-align: top;
     width: 20%;
     margin-left: 15%;
