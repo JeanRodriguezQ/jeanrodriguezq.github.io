@@ -1,41 +1,58 @@
 <!DOCTYPE html>
-
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Principal - Ralix Autos</title> 
-        <link rel="stylesheet" href="reset.css">
-        <link rel="stylesheet" href="index.css">
-    </head>
-
-    <body>
-
-        <div class="encabezado">
-            <header>
-                <h1><img src="logos/ralix2.jpg"></h1>
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="nosotros.html">Nosotros</a></li>
-                        <li><a href="ubicaciones.html">Tiendas</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
-                    </ul>
-                </nav>
-            </header>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montagu+Slab:opsz@16..144&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight&display=swap" rel="stylesheet">
+    
+    <title>Encriptador de Texto</title>
+</head>
+<body>
+    <header>
+        <div class="superior">            
+            <img src="imagenes\logo1c.png" alt="Logo">
+            <h1>Encriptador de textos Alura</h1>
+            <nav>
+                <ul>
+                    <li><a href="about.html">Acerca</a></li>
+                    <li><a href="https://github.com/JeanRodriguezQ">+ Proyectos</a></li>
+                </ul>
+            </nav>
         </div>
+    </header>
+    <main>
+        <section class="EntradaUser">
+            <textarea class="text-area" cols="20" rows="15" placeholder="Ingrese el texto aqui"></textarea>
+            <div>
+                <h6 class="informacion">
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                    width="16" 
+                    height="16" 
+                    fill="currentColor" 
+                    class="bi bi-exclamation-circle" 
+                    viewBox="0 0 16 16"> 
+                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> 
+                    <path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z"/> 
+                    </svg>
+                    Solo textos con letras minúsculas sin puntos ni comas.</h6>
+            </div>
+            <div class="botones">
+                <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>
+        </section>
+        <section class="SalidaUser">
+            <textarea class="mensaje" cols="20" rows="10" ></textarea>
+            <div class="noTexto">No se encontró ningún texto</div>
+            <button class="copiar" onclick="copiar()">Copiar</button>
+        </section>
+    </main>
+</body>
 
-        <div>
-            <h2><img src="banner/banner1.jpg"></h2>
-        </div>
-        <div class="entrada1">
-            <p>
-                Líderes en el mercado de venta de autos de segunda mano en Panamá, <strong>Ralix Autos</strong> le brinda una amplia varidad de vehículos de excelente calidad acompañado del respaldo y seguimiento de nuestra red de talleres a nivel nacional.
-            </p>
-        </div>
-       
-        <footer>
-            <img src="logos/logoBlanco.png">
-            <p class="copyright">&copy Copyright Ralix Autos - 2023</p>
-        </footer>
-    </body>
+<script type="text/javascript" src='encriptador.js'></script>
 </html>

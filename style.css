@@ -1,0 +1,234 @@
+/*
+Paleta Light:
+
+-Body:
+-Font:
+-Secondary: 
+
+
+Paleta Dark:
+
+-Body: #034744
+-Font: #ededed
+-Font Hover: #847e7e
+-Secondary: 
+*/
+
+/*  ----- BODY STYLE ----- */
+*{
+    background: #dfe0ed;
+    font-family: 'Inter Tight', sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 150%;
+    overflow-y:hidden;
+}
+
+/*  ----- HEADER STYLE ----- */
+header{
+    padding: 20px 40px 20px 40px;   
+}
+
+/* ----- NAVIGATION BAR ----- */
+.superior{
+    position: relative;
+    margin: 0 auto;
+}
+
+.superior h1{
+    text-transform: uppercase;
+    position: absolute;
+    display: inline;
+    margin: 20px;
+    font-size: 25px;
+    font-weight:bold;
+    color: #2f348c;
+}
+
+.superior img{
+    width: 5em;
+}
+
+nav{
+    position: absolute;
+    top:20px;
+    right: 0;
+}
+
+nav li{
+    display: inline;
+    margin: 10px 30px 0 20px;
+}
+
+nav a{
+    text-transform: uppercase;
+    color:#2f348c;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color:#6266a9;
+    text-decoration: underline;
+}
+
+/*------- MAIN ----------*/
+main{
+    display: flex;
+    margin: 10px 30px 20px 30px;
+}
+
+/* ----- TEXT BOX STYLE ----- */
+
+.text-area {
+    height: 40%;
+    width: 90%;
+    border: none;
+    color: #2f348c;
+    padding: 2px;
+    text-transform: lowercase;
+    resize: none;
+    overflow: auto;
+}
+
+::placeholder { color: #2f348c; }
+  
+.text-area:focus {
+      outline: none;
+}
+
+.mensaje{
+    width: 17em;
+    background: white;
+    background-image: url("imagenes/nonetext.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    color: #2f348c;
+    border-radius: 24px;
+    margin-left: 50px;
+    padding: 5px 5px 5px 20px;
+    position: absolute;
+    resize: none;
+}
+.mensaje:focus {
+    outline: none;
+}
+
+.botones{
+    display: flex;
+    margin-top: 25px;
+}
+
+.btn-desencriptar {
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 30px;
+    width: 10em;
+}
+
+.btn-encriptar {
+    background-color: #2f348c;
+    border: 1px solid #2f348c;
+    border-radius: 24px;
+    color: white;
+    cursor: pointer;
+    height: 67px;
+    width: 10em;
+}
+
+.copiar {
+    border: 1px solid #2f348c;
+    border-radius: 24px;
+    color: #2f348c;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 5em;
+    margin-top: 390px;
+    position: absolute;
+    width: 10em;
+}
+
+.informacion {
+    color: #495057;
+    font-size:18px;
+}
+
+.noTexto{
+    background: none;
+    position:absolute;
+    margin-top: 355px;
+    margin-left: 8em;
+    width: 15em;
+    text-align: center;
+    font-size: 20px;
+    font-style: oblique;
+}
+
+#autor{
+    display: block;
+    position:absolute;
+    margin-top: 445px;
+}
+
+
+@media screen and (max-width:800px){
+    *{
+        background: #dfe0ed;
+        font-family: 'Inter Tight', sans-serif;
+        font-weight: 300;
+        font-size: 15px;
+        position: static;
+        overflow-y:scroll;
+        overflow-x: hidden;
+        margin: 0;
+    }
+    main{
+        display: contents;
+    }
+    .superior img, .superior h1, .superior nav a{
+        margin: auto;
+        text-align: center;
+        display: block;
+        position:sticky;
+        font-size: 15px;
+    }
+    .titulo_b{
+        text-align: center;
+        overflow-y: hidden;
+    }
+    nav{
+        position: static;
+    }
+    .text-area, .mensaje, .informacion, .botones{
+        width: 100%;
+        margin:5px;
+        margin-top: 15px;    
+    }
+    .mensaje{
+        background-image: none;
+        padding: auto;
+        border-radius: 0;
+    }
+    .noTexto{
+        position: absolute;
+        width: 100%;
+        margin:auto;
+        margin-top: 3em;   
+    }
+    .botones{
+        text-align: center;
+
+    }
+}
+
+@media screen and (max-width:320px){
+    .btn-desencriptar{
+        margin-left: 15px;
+    }
+}
